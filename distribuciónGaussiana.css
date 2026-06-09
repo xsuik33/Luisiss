@@ -1,0 +1,69 @@
+/* Fondo neutro y limpio */
+body {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    color: #333;
+}
+
+/* Tarjeta limpia tipo "papel" */
+.card {
+    background: #ffffff !important;
+    border: 1px solid #dee2e6 !important;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Títulos sobrios */
+h2 {
+    color: #2c3e50;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+/* Fórmula en formato académico */
+.latex-container {
+    background: #fdfdfd !important;
+    border: 1px solid #e9ecef;
+    color: #2c3e50 !important;
+    font-size: 1.4rem;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+/* Inputs con estilo profesional */
+.form-control {
+    border: 1px solid #ced4da !important;
+    border-radius: 6px !important;
+    padding: 10px;
+    background-color: #fff !important;
+}
+
+.form-control:focus {
+    border-color: #3498db !important;
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25) !important;
+}
+
+/* Caja de resultado elegante */
+.result-box {
+    background: #f1f4f9 !important;
+    border-left: 4px solid #3498db !important;
+    padding: 20px;
+    border-radius: 0 8px 8px 0;
+    text-align: left;
+}
+
+#valor-final {
+    color: #2980b9 !important;
+    font-size: 1.8rem;
+    font-family: "Courier New", Courier, monospace; /* Fuente tipo calculadora */
+}
+
+.text-muted {
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}

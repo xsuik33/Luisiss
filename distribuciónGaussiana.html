@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Calculadora Gaussiana</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <link rel="stylesheet" href="/distribuciónGaussiana.css" />
+    </head>
+    <body class="bg-light">
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <div class="card shadow-lg p-4 rounded-4">
+                        <h2 class="text-center mb-4">Integral Gaussiana</h2>
+
+                        <div id="formula" class="latex-container bg-dark text-white p-4 rounded text-center mb-4">
+                            $$\int_{a}^{b} \frac{1}{v\sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x-\mu}{v}\right)^2} dx$$
+                        </div>
+
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <label class="form-label">a (límite inf)</label>
+                                <input type="number" id="a" class="form-control" value="0" oninput="actualizar()" />
+                            </div>
+                            <div class="col-6">
+                                <label class="form-label">b (límite sup)</label>
+                                <input type="number" id="b" class="form-control" value="1" oninput="actualizar()" />
+                            </div>
+                            <div class="col-6">
+                                <label class="form-label">μ (Media)</label>
+                                <input type="number" id="mu" class="form-control" value="0" oninput="actualizar()" />
+                            </div>
+                            <div class="col-6">
+                                <label class="form-label">v (Desv. est.)</label>
+                                <input type="number" id="v" class="form-control" value="1" oninput="actualizar()" />
+                            </div>
+                        </div>
+
+                        <div
+                            class="mt-4 p-3 bg-primary bg-opacity-10 border-start border-primary border-4 rounded text-center"
+                        >
+                            <small class="text-muted text-uppercase">Probabilidad calculada:</small>
+                            <div id="valor-final" class="h3 text-primary fw-bold">...</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="/distribuciónGaussiana.js"></script>
+</html>
